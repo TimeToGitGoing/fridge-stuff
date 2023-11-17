@@ -1,0 +1,12 @@
+<h1>Questions? Contact me!</h1>
+
+<h2>Reach me here:</h2>
+<ol>
+  <% @contacts.each do |contact| %>
+    <li><%= contact.capitalize %></li>
+  <% end %>
+</ol>
+
+<%= link_to "Learn more about Fridge Stuff", about_path %>
+<br>
+<%= link_to "Back to Home", root_path %>
